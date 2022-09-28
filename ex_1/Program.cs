@@ -7,8 +7,8 @@ Console.Write("Введите число: ");
 int a = int.Parse(Console.ReadLine());
 string Num(int a)
 {
- if( a == 1 ) return "1";
- else if( a % 2 == 0) return Num(a-1) + a;
+ if( a == 0 ) return " ";
+ else if( a % 2 == 0) return $"{Num(a-1) + a}, ";
  else return Num(a-1);
 }
-Console.WriteLine(Num(a)); 
+Console.Write(Num(a)); 
