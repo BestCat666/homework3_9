@@ -8,7 +8,7 @@ int a = int.Parse(Console.ReadLine());
 string Num(int a)
 {
  if( a == 0 ) return " ";
- else if( a % 2 == 0) return $"{Num(a-1) + a}, ";
+ else if( a % 2 == 0) return $"{Num(a-1) + a} \b ";
  else return Num(a-1);
 }
 Console.Write(Num(a)); 
