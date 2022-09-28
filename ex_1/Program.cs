@@ -8,7 +8,7 @@ int a = int.Parse(Console.ReadLine());
 string EvenNum(int a)
 {
  if( a == 0 ) return " ";
- else if( a % 2 == 0) return $"{EvenNum(a-1) + a} ";
+ else if( a % 2 == 0) return $" { a + EvenNum(a-1)}";
  else return EvenNum(a-1);
 }
 Console.Write(EvenNum(a)); 
