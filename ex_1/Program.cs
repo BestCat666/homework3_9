@@ -12,3 +12,6 @@ string EvenNum(int a)
  else return EvenNum(a-1);
 }
 Console.Write(EvenNum(a)); 
+
+//5 = 5 +  4  +  3  +  2  +  1
+// a = a + a-1 + a-1 + a-1 + a-1
