@@ -12,3 +12,6 @@ int NaturalNumSum(int n, int a)
  else return n + NaturalNumSum((n - 1), a);
 }
 Console.WriteLine(NaturalNumSum(b, a));
+
+// 8 -- 8 +  7  +  6  +  5  +  4   -- 4
+// b -- b + b-1 + b-1 + b-1 + b-1  -- a
